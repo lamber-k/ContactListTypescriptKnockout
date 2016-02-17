@@ -1,0 +1,11 @@
+﻿<div class="panel panel-default">
+    <div class="pull-right">
+<!--        <i class="glyphicon glyphicon-star"></i>-->
+        <i class="pull-right remove-click glyphicon glyphicon-trash" data-bind="click: function() {$parents[1].DeleteContact(Contact())}"></i>
+    </div>
+    <div class="panel-body">
+        <h3 data-bind="text: Contact().FirstName + ' ' + Contact().LastName"></h3>
+        <p data-bind="text: Contact().Email"></p>
+        <p data-bind="text: Contact().Telephone"></p>
+    </div>
+</div>
