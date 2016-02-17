@@ -1,0 +1,29 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>Contacts</h3>
+    </div>
+    <div class="panel-body">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Formulaire</h4>
+            </div>
+            <div class="panel-body">
+                <contact-form></contact-form>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Liste des contacts</h4>
+            </div>
+            <div class="panel-body">
+                <div class="container-fluid">
+                    <div data-bind="foreach: Contacts">
+                        <div class="col-md-4">
+                            <contact-details params="contact: $data"></contact-details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+﻿<div class="container-fluid">
+    <div class="col-md-12">
+        <div class="panel panel-default add-form">
+            <div class="panel-body">
+                <h3>New contact</h3>
+                <form data-bind="submit: AddNewContact, validationOptions: {errorsAsTitle: true}">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Prénom</label>
+                                <input data-bind="textInput: FirstName" type="text" class="form-control">
+                                <span data-bind="validationMessage: FirstName"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Nom</label>
+                                <input data-bind="textInput: LastName" type="text" class="form-control">
+                                <span data-bind="validationMessage: LastName"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input data-bind="textInput: Email" type="text" class="form-control">
+                                <span data-bind="validationMessage: Email"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Téléphone</label>
+                                <input data-bind="textInput: Phone" type="text" class="form-control">
+                                <span data-bind="validationMessage: Phone"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" data-bind="{enable: Validation.isValid()}" class="btn btn-success pull-right">Nouveau contact</button>
+                            <p data-bind="{visible: !Validation.isValid()}" class="pull-right"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!-- build:remove:release -->
+    <meta name="debug" content="yes" />
+    <!-- /build -->
+
+    <!-- build:css:release styles/styles.min.css -->
+    <link rel="stylesheet" href="modules/contacts/contacts.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <!-- /build -->
+    <!-- build:[data-main]:release main -->
+    <script src="lib/requirejs/require.js" data-main="core/main"></script>
+    <!-- /build -->
+    <title>Contact List</title>
+
+</head>
+<body>
+    <div id="applicationHost">
+        <contacts params="contactService: contactService"></contacts>
+    </div>
+</body>
+</html>

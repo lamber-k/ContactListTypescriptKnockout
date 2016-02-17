@@ -1,0 +1,11 @@
+{
+  "name": "ASP.NET",
+  "private": true,
+  "dependencies": {
+    "knockoutjs": "~3.4.0",
+    "bootstrap": "3.3.5",
+    "requirejs": "2.1.20",
+    "text": "2.0.14",
+    "Knockout-Validation": "~1.0.2"
+  }
+}
