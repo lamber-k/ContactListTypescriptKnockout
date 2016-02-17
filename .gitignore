@@ -216,7 +216,6 @@ ModelManifest.xml
 wwwroot
 !web.config
 bower_components
-typings
 build
 *.js.map
 *.js
