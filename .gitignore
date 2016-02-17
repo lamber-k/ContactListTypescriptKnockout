@@ -214,7 +214,7 @@ ModelManifest.xml
 
 # Project exclusions
 wwwroot
-!*/wwwroot/web.config
+!web.config
 bower_components
 typings
 build
