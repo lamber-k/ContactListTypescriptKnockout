@@ -214,8 +214,10 @@ ModelManifest.xml
 
 # Project exclusions
 wwwroot
+!wwwroot/web.config
 bower_components
 typings
 build
 *.js.map
 *.js
+!gruntfile.js
